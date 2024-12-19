@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.show {
+  display: block !important;
+}
+
+.sofa-items {
+    display: ruby;
+}
+
+.sofa-element {
+  display: none;
+  width: 35vh;
+  background-color: #f1f1f1;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.sofa-element-image {
+  height: 30vh;
+}
+
+.sofa-element-image {
+  width: 95%;
+  height: 95%;
+  border-radius: 15px;
+  padding: 7px;
+  position: relative;
+}
+
+.sofa-element-image img {
+  width: 95%;
+  height: 95%;
+  border-radius: 15px;
+  padding: 7px;
+}
+
+.sofa-element-name h2 {
+  margin: 0;
+}
+
+.sofa-element-body {
+  padding: 7px;
+  cursor: pointer;
+}
+
+.sofa-element-body a {
+  color: black;
+  text-decoration: auto;
+}
+
+.sofa-element-price span {
+    font-size: 20px;
+}
+
+.sofa-element-body .attrs {
+    font-size: 12px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+  background-color: rgba(0,0,0,0.8);
+  border-radius: 50px;
+}
+
+.next {
+  right: 15px;
+}
+
+.prev {
+  left: 15px;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.mySlides {
+  display: none;
+}
+
+/*
+* Sorting Styles
+*/
+.btn {
+  border: none;
+  outline: none;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 5px 10px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+.filter-container {
+  background-color: #f7f7f7;
+  border-radius: 50px;
+  padding: 5px;
+  border: 1px solid #e5e5e5;
+  display: inline-block;
+}
+
+/*
+* Dropdown
+*/
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropbtn {
+    height: 30px;
+    width: 60px;
+}
+
+.mySlides.fade {
+    display: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .mySlides.fade img {
+    max-width: 100%;
+    height: auto;
+  }
+  

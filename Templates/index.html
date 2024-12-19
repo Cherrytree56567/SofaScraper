@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sofa Finder</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="filter-container" id="filter-container">
+      <button class="btn active" onclick="filterSelection('all')">All</button>
+      <button class="btn" onclick="filterSelection('harvey')">Harvey Norman</button>
+      <button class="btn" onclick="filterSelection('amart')">Amart Furniture</button>
+      <button class="btn" onclick="filterSelection('furnppl')">The Furniture People</button>
+      <button class="btn" onclick="filterSelection('ikea')">IKEA</button>
+    </div>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn btn">Price</button>
+      <div id="myDropdown" class="dropdown-content">
+        <button class="btn" onclick="sortElements('desc')">High to Low</button>
+        <button class="btn" onclick="sortElements('asc')">Low to High</button>
+      </div>
+    </div>
+    <br>
+    <div class="sofa-items">
+      
+    </div>
+    <script src="index.js"></script>
+    <script src="sort.js"></script>
+    <script src="slideshow.js"></script>
+  </body>
+</html>
