@@ -1,4 +1,4 @@
-fetch('data')
+fetch('SofaData.json')
 .then(response => {
   if (!response.ok) {
     throw new Error(`HTTP error! status: ${response.status}`);
