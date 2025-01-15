@@ -10,3 +10,13 @@ A simple scraper and web ui for finding sofa's. Made in Py and HTML.
  - Support for other countries
  - Dark Mode
  - Better UI
+
+## Building
+Run Scraper
+```
+python main.py
+```
+Run App
+```
+python app.py
+```
